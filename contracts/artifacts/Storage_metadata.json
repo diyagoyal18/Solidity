@@ -7,19 +7,6 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "_string",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "a",
 				"outputs": [
 					{
@@ -33,7 +20,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "addvar",
+				"name": "addressvar",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -84,12 +71,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "integer",
+				"name": "number",
 				"outputs": [
 					{
-						"internalType": "int248",
+						"internalType": "uint256",
 						"name": "",
-						"type": "int248"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -97,12 +84,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "number",
+				"name": "number1",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "int256",
 						"name": "",
-						"type": "uint256"
+						"type": "int256"
 					}
 				],
 				"stateMutability": "view",
@@ -118,6 +105,11 @@
 						"type": "uint256"
 					},
 					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					},
+					{
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
@@ -128,24 +120,19 @@
 						"type": "address"
 					},
 					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
 						"internalType": "uint256[3]",
 						"name": "",
 						"type": "uint256[3]"
 					},
 					{
-						"internalType": "int248",
-						"name": "",
-						"type": "int248"
-					},
-					{
 						"internalType": "uint256[]",
 						"name": "",
 						"type": "uint256[]"
-					},
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -157,41 +144,108 @@
 						"internalType": "uint256",
 						"name": "num",
 						"type": "uint256"
-					},
-					{
-						"internalType": "bool",
-						"name": "b",
-						"type": "bool"
-					},
-					{
-						"internalType": "address",
-						"name": "addressvar",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256[3]",
-						"name": "fixarr",
-						"type": "uint256[3]"
-					},
-					{
-						"internalType": "int248",
-						"name": "integ",
-						"type": "int248"
-					},
-					{
-						"internalType": "uint256[]",
-						"name": "dynarr",
-						"type": "uint256[]"
-					},
-					{
-						"internalType": "string",
-						"name": "_str",
-						"type": "string"
 					}
 				],
 				"name": "store",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "num1",
+						"type": "int256"
+					}
+				],
+				"name": "store1",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "abc",
+						"type": "bool"
+					}
+				],
+				"name": "store2",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "addvar",
+						"type": "address"
+					}
+				],
+				"name": "store3",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "newst",
+						"type": "string"
+					}
+				],
+				"name": "store4",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "fa",
+						"type": "uint256[3]"
+					}
+				],
+				"name": "store5",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "da",
+						"type": "uint256[]"
+					}
+				],
+				"name": "store6",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "stringVar",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -206,7 +260,7 @@
 						"_0": "value of 'number'"
 					}
 				},
-				"store(uint256,bool,address,uint256[3],int248,uint256[],string)": {
+				"store(uint256)": {
 					"details": "Store value in variable",
 					"params": {
 						"num": "value to store"
@@ -224,7 +278,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/exp1_func.sol": "Storage"
+			"contracts/exp1_types.sol": "Storage"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -238,12 +292,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/exp1_func.sol": {
-			"keccak256": "0x69ed9bebd0dd463dc22f8ed07475333117eacf96ebecb5337fd462ef117173fd",
+		"contracts/exp1_types.sol": {
+			"keccak256": "0xfe8624aefc3f316e906680c217b0b65358cc22d95e3bf4c44c19a505459dc11d",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://487d4cb4c2ed31817f55e81c181216d1d0491b9b3f978f6cb4695e4b411dbb7a",
-				"dweb:/ipfs/QmZr8WZgbhz3mETASqzokZ4WL8UpPazXgSLV4Cpzdvd7Pw"
+				"bzz-raw://8cb14d6f066f8b3975ec48613b7e4534ea8326c7e4eee1d1b2422c30bc60c3bb",
+				"dweb:/ipfs/QmYya4AnhL7qrNNMiHviPzss87CE5YkPVq9heDUag7x6pw"
 			]
 		}
 	},
