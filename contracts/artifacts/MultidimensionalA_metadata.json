@@ -21,7 +21,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/exp1_multidimArray.sol": "Storage"
+			"contracts/exp1_multidimArray.sol": "MultidimensionalA"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -36,11 +36,11 @@
 	},
 	"sources": {
 		"contracts/exp1_multidimArray.sol": {
-			"keccak256": "0xa1dc60f7675a23a732980b4233b1a6e8fcbbef9d7a77808044ab11f76b415cfb",
+			"keccak256": "0x617014d5b797cdd8f3ba7edd49830cc169b00639b73971d8015b0b666f60596f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://10ae8f9c23e9204cf1dd9e8c393675885b1085aeaf2e4277d7b632e8069e6a95",
-				"dweb:/ipfs/QmaiigBHSBooLeH7ajQWMXidyJ5R499v3FCjARAZyVKT6C"
+				"bzz-raw://b9fd4a9d1ea56a6492839db2ff7b835f68fb632698b752ca31ae55360cd59648",
+				"dweb:/ipfs/Qmd38yfWZXzCNwTpjSEXAgYSjjw8LMBR3QmqcmrTHtn6vV"
 			]
 		}
 	},
