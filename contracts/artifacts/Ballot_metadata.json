@@ -8,9 +8,9 @@
 			{
 				"inputs": [
 					{
-						"internalType": "bytes32[]",
+						"internalType": "string[]",
 						"name": "proposalNames",
-						"type": "bytes32[]"
+						"type": "string[]"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -66,9 +66,9 @@
 				"name": "proposals",
 				"outputs": [
 					{
-						"internalType": "bytes32",
+						"internalType": "string",
 						"name": "name",
-						"type": "bytes32"
+						"type": "string"
 					},
 					{
 						"internalType": "uint256",
@@ -131,9 +131,9 @@
 				"name": "winnerName",
 				"outputs": [
 					{
-						"internalType": "bytes32",
+						"internalType": "string",
 						"name": "winnerName_",
-						"type": "bytes32"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -220,11 +220,11 @@
 	},
 	"sources": {
 		"contracts/3_Ballot.sol": {
-			"keccak256": "0xcbd9edecd754a38b42e18274ae4c89792eb3a3ee3de804019b618bed7fd6b1c1",
+			"keccak256": "0x5a9fc4326345dc4d262fefbbaa6fc744a2f613bee67c53e20029036178da8088",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://7ffead843527326b6a8a6f15fc333304ba2c298cd8f61ac57dd11aa166d9c06d",
-				"dweb:/ipfs/QmQPGfh1jmREFZbvo6nsFgjX8WLoPeqUAFmsV3BrdN92NS"
+				"bzz-raw://fbdf10e740e5b42bd2ea98b50e49a81b9007e5aa1d0870698b298ca3a71cc050",
+				"dweb:/ipfs/QmX7gvrALzYsyG7utrWDmuseVzz6ZSbkAhx6tQrVK9X6VB"
 			]
 		}
 	},
