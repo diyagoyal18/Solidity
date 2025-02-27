@@ -1,35 +1,24 @@
 // SPDX-License-Identifier: GPL-3.0
-
 pragma solidity >=0.8.2 <0.9.0;
-
-/**
-  @title Storage
- * @dev Store & retrieve value in a variable
- * @custom:dev-run-script ./scripts/deploy_with_ethers.ts
- */
-
+// Diya Goyal
+//102215255
 interface IQuadraticSolver {
     // Function to solve quadratic equation in Contract2
     function solveQuadratic(int256 a, int256 b, int256 c) external pure returns (int256, int256);
 }
-
 contract Contract1 {
     IQuadraticSolver public quadraticSolver;
-
     // Setting the address of Contract2 (QuadraticSolver contract)
     constructor(address _quadraticSolverAddress) {
         quadraticSolver = IQuadraticSolver(_quadraticSolverAddress);
     }
-
     // Function to accept the coefficients and call Contract2 to solve the quadratic equation
     function solveQuadraticEquation(int256 a, int256 b, int256 c) public view returns (int256, int256) {
         // Call the solveQuadratic function in Contract2
         return quadraticSolver.solveQuadratic(a, b, c);
     }
 }
-
 contract Contract2 {
-
     // Function to solve quadratic equation: ax^2 + bx + c = 0
     // Returns the two roots (x1, x2)
     function solveQuadratic(int256 a, int256 b, int256 c) public pure returns (int256, int256) {

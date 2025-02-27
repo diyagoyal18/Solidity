@@ -51,7 +51,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/exp1_2contracts.sol": "MultiDimArrayIteration"
+			"contracts/exp1_multidimArray.sol": "MultiDimArrayIteration"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -65,12 +65,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/exp1_2contracts.sol": {
-			"keccak256": "0xf9290d8049c066f00670e04ff271fd8b2bf745f3e63773bd35837a649aeefa72",
+		"contracts/exp1_multidimArray.sol": {
+			"keccak256": "0x9c2e77da3626b776956cda29b90a647b3ce1f82dde701bef191529cdc1eb9e12",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://24e0a7bcbcdfc2f22a26a60fd592b95201ad2b9660e614e307e50ce1029dc228",
-				"dweb:/ipfs/QmVeUVDziwsQBzMEgNzJi51vNWaoqVczfD75M7iKFn6UWP"
+				"bzz-raw://3e0f1435e6eb5ec2509b28be1e83c65eecd9a795097f490474c371f7bf18d1b2",
+				"dweb:/ipfs/QmZZUz3iBQj1QATx8B45vRUmrVxpZBhjUGBYht6rRwqAn3"
 			]
 		}
 	},

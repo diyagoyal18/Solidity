@@ -1,12 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0
 
 pragma solidity >=0.8.2 <0.9.0;
-
-/**
- * @title Storage
- * @dev Store & retrieve value in a variable
- * @custom:dev-run-script ./scripts/deploy_with_ethers.ts
- */
+// Diya Goyal
+//102215255
 contract MultiDimArrayBasic {
     uint[][] private multiArray;
 
@@ -28,7 +24,6 @@ contract MultiDimArrayBasic {
         return multiArray[_row];
     }
 }
-
 // Contract for Modifying Multidimensional Array Elements
 contract MultiDimArrayModify {
     uint[][] private multiArray;
@@ -74,22 +69,18 @@ contract MultiDimArraySizeAccess {
         return totalCount;
     }
 }
-
 // Contract for Iterating Through the Multidimensional Array
 contract MultiDimArrayIteration {
     uint[][] private multiArray;
-
     // Get all elements from all rows in the multidimensional array
     function getAllElements() public view returns (uint[] memory) {
         uint totalCount = 0;
         // Calculate total number of elements
         for (uint i = 0; i < multiArray.length; i++) {
             totalCount += multiArray[i].length;
-        }
-        
+        } 
         uint[] memory allElements = new uint[](totalCount);
         uint index = 0;
-
         // Fill the allElements array with the multidimensional array elements
         for (uint i = 0; i < multiArray.length; i++) {
             for (uint j = 0; j < multiArray[i].length; j++) {
@@ -99,7 +90,6 @@ contract MultiDimArrayIteration {
         }
         return allElements;
     }
-
     // Get a specific element from a flattened view of the multidimensional array
     function getElementFlat(uint _index) public view returns (uint) {
         uint totalCount = 0;

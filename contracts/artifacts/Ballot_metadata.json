@@ -200,6 +200,7 @@
 		"userdoc": {
 			"kind": "user",
 			"methods": {},
+			"notice": "//Diya Goyal //102215255",
 			"version": 1
 		}
 	},
@@ -220,11 +221,11 @@
 	},
 	"sources": {
 		"contracts/3_Ballot.sol": {
-			"keccak256": "0x5a9fc4326345dc4d262fefbbaa6fc744a2f613bee67c53e20029036178da8088",
+			"keccak256": "0x1dd211c7f8ecbce023102c1deb6ae0568c376070224990060d71ebffd622f330",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://fbdf10e740e5b42bd2ea98b50e49a81b9007e5aa1d0870698b298ca3a71cc050",
-				"dweb:/ipfs/QmX7gvrALzYsyG7utrWDmuseVzz6ZSbkAhx6tQrVK9X6VB"
+				"bzz-raw://d97faca57fd278389c38d5b0b8547d781220b287deb8387888f5c1e604d3dff6",
+				"dweb:/ipfs/Qmaxk6FZq4aXfMv8ZuVkMx8wPMEyMiGQGsNKUjGUMozR4G"
 			]
 		}
 	},

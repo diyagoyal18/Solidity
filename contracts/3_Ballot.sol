@@ -3,6 +3,8 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 /** 
+//Diya Goyal
+//102215255
  * @title Ballot
  * @dev Implements voting process along with vote delegation
  */

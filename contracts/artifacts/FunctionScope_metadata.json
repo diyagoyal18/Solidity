@@ -4,13 +4,86 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_text",
+						"type": "string"
+					}
+				],
+				"name": "experimentWithScope",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getData",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "multiply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "store",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
-			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
-			"details": "Store & retrieve value in a variable",
 			"kind": "dev",
 			"methods": {},
-			"title": "Storage",
 			"version": 1
 		},
 		"userdoc": {
@@ -21,7 +94,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/exp1_stackQueue.sol": "FunctionScope"
+			"contracts/exp1_func.sol": "FunctionScope"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -35,12 +108,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/exp1_stackQueue.sol": {
-			"keccak256": "0x67e9a70d7c622343abb9886db8f59e959388c42f2dfaa02be313eb39fbdb8b09",
+		"contracts/exp1_func.sol": {
+			"keccak256": "0xd0a4166bcd561d37586e3d2382f11040d0d87114de1b1b72666227249ec66267",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://7bb51c97d5cb70071e4ea89715686eb80243a33cf0c44c628cd778cbdcefdf1b",
-				"dweb:/ipfs/QmY5HUJuarV7vcQZXk4RKnM9Azy5MAZ8Fs7RSLVQqf9AKe"
+				"bzz-raw://af910e267a6fb95138555872347baa4e7f47684b77baf75c7d6ddc3b3c525cb0",
+				"dweb:/ipfs/QmfSAU64Xh7UkgewYSmykh2RwmKKjJGdJjs57uNGmYeMs1"
 			]
 		}
 	},
