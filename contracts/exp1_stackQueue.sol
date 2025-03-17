@@ -27,7 +27,7 @@ contract StackQueue {
         queue.push(_value);
     }
 
-    function dequeue() public returns (uint) {
+    function dequeue() public returns (uint) { 
         require(queue.length > frontIndex, "Queue is empty");
         uint value = queue[frontIndex];
         frontIndex++;
